@@ -12,3 +12,4 @@ main, menu, nav, section, summary {
 menu, ul, li { list-style: none }
 a { text-decoration: none }
 table { border-collapse: collapse }
+img {object-fit:cover}
