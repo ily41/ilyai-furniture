@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text&display=swap');
+
+
+:root {
+    --main-bg:#F4F4EA;
+    --sub-bg:   #4E2A1E;
+}
+
+body {
+    background-color: var(--main-bg);
+}
+
+/*HEADER*/
+header {
+    height: 80vh;
+    background-color: var(--main-bg);
+}
+
+.burger-svg {
+    position: fixed;
+    top:25px;
+    right: 25px;
+    cursor:pointer;
+    z-index: 20;
+}
+.burger-svg path {
+    stroke: var(--sub-bg);
+}
+
+.burger-menu {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--sub-bg);
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-menu-text {
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+}
+h5 {
+    font: 1.9em "Big Shoulders Display";
+    color:var(--main-bg);
+    text-align: center;
+}
+
+h1 {
+    font:5.5em "Big Shoulders Display";
+    font-weight: 800;
+    background: url(../img/image.png);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    font:2.5em "Big Shoulders Display";
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    color:var(--sub-bg);
+}
+
+h2 {
+    font-family: "Big Shoulders Inline Text";
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.header-text {
+    margin-bottom:100px;
+    padding-top: 170px;
+}
+
+main {
+    background-color: var(--main-bg);
+    height: 100vh;
+}
+nav {display: none;}
+#bg-about {
+    display: none;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    /* padding-top: 100px; */
+}
+#about-text-item {
+    margin: 10px 0 10px 0;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    color: #6B4539;
+}
+
+.padTop {padding-top: 90px;}
+
+#portfolio-side {
+    text-transform: uppercase;
+    font: 2em "Big Shoulders Display";
+    font-weight: 800;
+    color:var(--sub-bg);
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+.portfolio-pics img {
+    width: 170px;
+    height: 170px;
+}
+.portfolio-pics img:first-child {
+    position: absolute;
+    z-index: 5;
+}
+.portfolio-pics img:nth-child(2) {
+    position: absolute;
+}
+.portfolio-pics {
+    height: ;
+}
+
+
+@media(min-width:1024px) {
+    nav {display: flex;}
+
+    h1 {
+        font-size: 15em;
+    }
+
+    h2 {
+        font-size:6em
+    }
+
+    #about-header {
+        position: relative;
+        top:50px;
+        z-index: 5;
+        
+    }
+
+    .section-header h3 {
+        font-size:4.5em;
+        text-transform: capitalize;
+        letter-spacing: 14px;
+    }
+
+    header {
+        padding-top: 50px;
+        justify-content: space-between;
+    }
+    .header-text {height: 60vh;}
+    .burger-svg {display: none;}
+
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:50px;
+        width: 835px;
+        height: 60px;
+        border-radius: 25px;
+        background-color: var(--main-bg);
+        
+    }
+
+    /* Ilyai */
+
+
+    #logo {
+        font: 30px 'Big Shoulders Display';
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0.1em;
+        color: #4E2A1E;
+
+
+    }
+    nav {
+        font-family: "Big Shoulders Display";
+        transition: 1s;
+        box-shadow: 0px 4px 5px 0 #575757;
+        color:var(--sub-bg);
+    }
+
+    #nav-items {
+        font-weight: 600;
+        font-size:20px;
+        display:flex;
+        gap:35px;
+        
+    }
+
+    
+    #bg-about {
+        display: block;
+        position: absolute;
+        z-index: 0;
+        top:0;
+        left:-70px;
+        font:20em "Big Shoulders Display";
+        font-weight: 800;
+        opacity: 20%;
+        letter-spacing: 30px;
+        text-transform: uppercase;
+        color:#A5A5A5;
+    }
+
+    .about {
+        display: initial;
+        text-align: initial;
+        
+    }
+    .padTop {padding-top: 100px;}
+    .about-text {
+        margin:100px 0 0 100px;
+    }
+
+    #about-text-item {
+        margin: 40px 0 40px 0;
+    }
+
+    #portfolio-side {
+        text-transform: capitalize;
+        font: 6.3em "Big Shoulders Display";
+    }
+    
+    
+
+}
+
+

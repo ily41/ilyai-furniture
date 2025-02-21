@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Trigger Text Rewrite</title>
+  
+  <!-- GSAP Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <!-- ScrollTrigger Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 200vh; /* Create enough space to scroll */
+    }
+
+    .content {
+      padding: 50px;
+      margin-top: 100vh; /* Start the content halfway down the page */
+    }
+
+    .scroll-reveal-text {
+      font-size: 2rem;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      border-right: 0.1em solid black; /* Optional: creates a cursor effect */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h2 class="scroll-reveal-text">This is the text that will be rewritten as you scroll!</h2>
+  </div>
+
+  <script>
+    // Register ScrollTrigger plugin with GSAP
+    gsap.registerPlugin(ScrollTrigger);
+
+    const textElement = document.querySelector('.scroll-reveal-text');
+    const text = textElement.textContent;
+    textElement.textContent = ''; // Clear the text initially
+    
+    // Split the text into individual characters and store them in an array
+    const characters = text.split('');
+    
+    // Function to reveal the text
+    const revealText = () => {
+      let index = 0;
+      const interval = setInterval(() => {
+        textElement.textContent += characters[index];
+        index++;
+        if (index === characters.length) {
+          clearInterval(interval);
+        }
+      }, 100); // Adjust speed by changing this value
+    };
+
+    // GSAP ScrollTrigger to trigger the text reveal
+    gsap.to(".scroll-reveal-text", {
+      scrollTrigger: {
+        trigger: ".scroll-reveal-text",
+        start: "top bottom",  // Start when the element reaches the bottom of the viewport
+        end: "top top",       // End when the element reaches the top of the viewport
+        scrub: 1,             // Synchronize the animation with the scroll position
+        onEnter: revealText,  // Trigger the text rewrite when the element comes into view
+      }
+    });
+  </script>
+</body>
+</html>
