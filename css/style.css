@@ -13,6 +13,8 @@ body {
 /*HEADER*/
 
 
+
+
 .burger-svg {
     position: fixed;
     top:25px;
@@ -57,7 +59,7 @@ h1 {
 
 .title-text {
     font:2.5em "Big Shoulders Display";
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: center;
     font-weight: 700;
     color:var(--sub-bg);
@@ -116,6 +118,7 @@ nav {display: none;}
     color:var(--sub-bg);
     text-align: center;
     margin-top: 25px;
+    filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.3));
 
 }
 
@@ -163,10 +166,17 @@ nav {display: none;}
     top:200px;
 }
 
+.bg-text {
+    display: none;
+}
+
 
 
 
 @media(min-width:700px) {
+    header {
+        height: 60vh;
+    }
     h1 {
         font-size:10em
     }
@@ -181,20 +191,12 @@ nav {display: none;}
         padding-top:100px;
     }
 
+
     .portfolio-pics img {
         width: 250px; height: 250px;
     }
-    .portfolio-main {align-items: center;}
-    .portfolio-pics {width: 375px; margin:0}
-    #portfolio-side {
-        text-align: initial;
-        order:1;
-        transform: rotate(90deg);
-        height: 35px;
-        margin: auto 0 auto 40px;
-        font-size:3em;
-    }
-    .portfolio-main-sub {display: flex; margin-top: 70px;}
+    .portfolio-main {align-items: center; position: relative;}
+    
 
     .two-pic { height: 375px;}
 
@@ -223,13 +225,51 @@ nav {display: none;}
         top: 125px;;
     }
 
+    .title-text {
+        font-size:4em;
+        
+    }
+
     .bg-text {
-        font:10em "Big Shoulders Display";
+        display: block;
+        font:12em "Big Shoulders Display";
         position: absolute;
+        left:-170px;
+        top:-100px;
+        opacity: 20%;
         text-transform: uppercase;
         color:#A5A5A5;
         font-weight: 800;
-        letter-spacing: 10%;
+        letter-spacing: 25px;
+    }
+    #portfolio-side {
+        align-self: end;
+        color:#6B4539;
+        letter-spacing:10px;
+        font-weight: 800;
+        text-align: initial;
+        font-size:5em;
+        transform: rotate(90deg);
+        margin:0;   
+        width: 238px;
+    }
+
+    #side-wrapper {
+        display: flex;
+        align-self: center;
+        width: 238px;
+    }
+
+   
+
+    .portfolio-pics {width: 375px; margin:0; flex:100;}
+    
+    .portfolio-main-sub {
+        display: flex;
+        margin-top: 120px;
+        flex:1;
+        flex-direction: row-reverse;
+        position: relative;
     }
 
 }
