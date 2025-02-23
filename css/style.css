@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text&display=swap');
 
-
+/* div,span {
+    border: 1px solid red;
+} */
 :root {
     --main-bg:#F4F4EA;
     --sub-bg:   #4E2A1E;
@@ -139,7 +141,7 @@ nav {display: none;}
 }
 .portfolio-pics {
     position: relative;
-    margin: 30px auto 0 auto;
+    margin: 80px auto 0 auto;
     width: 270px;
 }
 
@@ -166,9 +168,24 @@ nav {display: none;}
     top:200px;
 }
 
+.portfolio-main-sub {position: relative;margin-top:60px; overflow: visible; 
+    min-width: max-content;}
 .bg-text {
-    display: none;
+    font-family: "Big Shoulders Display";
+    font-size: 20vw;
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    opacity: 20%;
+    text-transform: uppercase;
+    color: #A5A5A5;
+    font-weight: 800;
+    letter-spacing: 15px;
+    white-space: nowrap; 
+    overflow: visible; 
+    z-index: 1;
 }
+
 
 
 
@@ -229,19 +246,8 @@ nav {display: none;}
         font-size:4em;
         
     }
-
-    .bg-text {
-        display: block;
-        font:12em "Big Shoulders Display";
-        position: absolute;
-        left:-170px;
-        top:-100px;
-        opacity: 20%;
-        text-transform: uppercase;
-        color:#A5A5A5;
-        font-weight: 800;
-        letter-spacing: 25px;
-    }
+    
+    
     #portfolio-side {
         align-self: end;
         color:#6B4539;
@@ -257,19 +263,30 @@ nav {display: none;}
     #side-wrapper {
         display: flex;
         align-self: center;
-        width: 238px;
+        
     }
+    #side-wrapper h4 {margin-left: 30px;}
 
-   
+   .bg-text {
+    position: absolute;
+    font-size: 11em;
+    top:250px; right:0;left:initial;z-index: 0;
+   }
+   .portfolio-sub {position: relative; width: 100%;}
 
-    .portfolio-pics {width: 375px; margin:0; flex:100;}
+    .portfolio-pics {width: 375px; margin:0;}
     
     .portfolio-main-sub {
+        position: relative;
         display: flex;
-        margin-top: 120px;
         flex:1;
         flex-direction: row-reverse;
+        justify-content: center;
+        
+    }
+    .portfolio-main {
         position: relative;
+        gap:150px
     }
 
 }
