@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text&display=swap');
 
-/* div,span {
-    border: 1px solid red;
-} */
+
+
 :root {
     --main-bg:#F4F4EA;
     --sub-bg:   #4E2A1E;
 }
-
 body {
     background-color: var(--main-bg);
+    z-index: -999999;
 }
 
 /*HEADER*/
@@ -54,7 +53,7 @@ h5 {
 h1 {
     font:4.5em "Big Shoulders Display";
     font-weight: 800;
-    background: url(../img/image.png);
+    background: url(../img/image.png) center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -82,8 +81,11 @@ header {
     justify-content: end;
     align-items: center;
     flex-direction: column;
-    height: 35vh;
+    padding-top: 150px;
+    
 }
+
+.padtop {padding-bottom: 150px;}
 
 
 main {
@@ -92,6 +94,7 @@ main {
 nav {display: none;}
 #bg-about {
     display: none;
+    z-index: 0;
 }
 
 .about {
@@ -111,7 +114,6 @@ nav {display: none;}
     color: #6B4539;
 }
 
-.padTop {padding-top: 70px;}
 
 #portfolio-side {
     text-transform: uppercase;
@@ -172,7 +174,7 @@ nav {display: none;}
     min-width: max-content;}
 .bg-text {
     font-family: "Big Shoulders Display";
-    font-size: 20vw;
+    font-size: 19vw;
     position: absolute;
     top: 30px;
     left: -20px;
@@ -253,9 +255,6 @@ nav {display: none;}
 
 
 @media(min-width:700px) {
-    header {
-        height: 60vh;
-    }
     h1 {
         font-size:10em
     }
@@ -265,9 +264,6 @@ nav {display: none;}
     }
     h2 {
         font-size:5.5em
-    }
-    .header-text {
-        padding-top:100px;
     }
 
 
@@ -351,17 +347,27 @@ nav {display: none;}
         gap:150px
     }
 
+    .skills-sub-top {
+        font-size:3em;
+    }
+
+    .skills-sub-bottom {
+        font-size: 1.7em;
+    }
 }
 
 
 @media(min-width:1024px) {
-    header {
-        height: 80vh;
-    }
     nav {display: flex;}
+
+    header {
+        padding: 0;
+    }
+    .header-text {padding-top:150px}
 
     h1 {
         font-size: 15em;
+        text-align: center;
     }
 
     h2 {
@@ -375,20 +381,19 @@ nav {display: none;}
     }
 
     header {
-        padding-top: 50px;
-        justify-content: space-between;
+        display: block;
     }
-    .header-text {height: 60vh;}
     .burger-svg {display: none;}
-
 
     nav {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin:50px auto 0 auto;
         gap:50px;
         width: 835px;
         height: 60px;
+        flex-grow:1;
         border-radius: 25px;
         background-color: var(--main-bg);
         
@@ -425,7 +430,6 @@ nav {display: none;}
     #bg-about {
         display: block;
         position: absolute;
-        z-index: 0;
         top:0;
         left:-70px;
         font:20em "Big Shoulders Display";
@@ -441,7 +445,6 @@ nav {display: none;}
         text-align: initial;
         
     }
-    .padTop {padding-top: 100px;}
     .about-text {
         margin:100px 0 0 100px;
     }
@@ -455,8 +458,9 @@ nav {display: none;}
         font: 6.3em "Big Shoulders Display";
         font-weight: 800;
     }
-    .about-header {
-        display: inline;
+    #about-header {
+        position: relative;
+        z-index: 1;
     }
 
     #about-text-item {
@@ -501,7 +505,7 @@ nav {display: none;}
     }
     #portfolio-side {font-size:9em;}
     .bg-text {
-        font-size:22em;
+        font-size:19em;
     }
     .two-pic {
         height: 575px;
@@ -511,6 +515,20 @@ nav {display: none;}
 
     .title-text {font-size: 6em;}
     .living-bg-text {top:-30px; right:0;}
+
+
+
+    .skills-sub-top {
+        font-size:4em;
+    }
+
+    .skills-sub-bottom {
+        font-size: 2.4em;
+    }
+
+    .skills-main {
+        gap:30px
+    }
     
 
 }
