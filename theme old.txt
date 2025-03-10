@@ -1,0 +1,54 @@
+theme old
+
+
+
+
+navbar hover the word is written again 
+
+
+COLORS 
+
+https://chatgpt.com/share/67aa5d62-fc90-8004-9bff-f9e6edf10092
+
+
+FONTS
+
+fonts will be in dactilo font
+in general modern fonts
+
+
+a thing that follows cursor
+
+
+NAVBAR
+
+project clients experience
+
+about me
+
+contact me
+
+testimonials
+
+what do I do
+
+portfolio find a gallery
+
+
+
+
+
+ideas
+
+hover effect form non-colored to colored
+
+the photos will be in polaroids
+
+contact me will be in a part of newspaper
+
+for pcc learn this animation https://technext.github.io/melan/index.html
+
+
+
+
+
