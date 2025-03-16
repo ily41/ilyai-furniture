@@ -1,0 +1,1099 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text&display=swap');
+
+
+
+:root {
+    --main-bg:#F4F4EA;
+    --sub-bg:   #4E2A1E;
+}
+body {
+    background-color: var(--main-bg);
+    z-index: -999999;
+}
+
+/*HEADER*/
+
+
+
+
+.burger-svg {
+    position: fixed;
+    top:25px;
+    right: 25px;
+    cursor:pointer;
+    z-index: 2000;
+}
+.burger-svg path {
+    stroke: var(--sub-bg);
+}
+
+.burger-menu {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--sub-bg);
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.burger-menu-text {
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+}
+
+.product-burger {
+    display: none;
+    align-items: initial;
+    width: 60%;
+}
+
+.burger-header {
+    font: 2.2em "Big Shoulders Display";
+    text-transform: uppercase;
+    color:#F5F5DC;
+    font-weight: 700;
+    margin: 100px auto 0px auto;
+    text-align: center;
+    display: block;
+}
+
+.product-burger-text {
+    color:#D4A373 ;
+    font: 1.2em "Big Shoulders Display";
+    text-transform: capitalize;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-burger-container {
+    margin-top: 91px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.dropDown-content {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    display: none;
+}
+
+.dropDown-text {
+    color:#F5F5DC;
+    font: 1.2em "Big Shoulders Display";
+    text-transform: capitalize;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-header,.product-sub {
+    text-align: center;
+    font:80px "Big Shoulders Display";
+    color: #6B4539;
+    margin: 112px auto 0px auto;
+    display: block;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: -2.5px 5px 5px rgba(0, 0, 0, 0.25);
+
+}
+
+.product-sub {
+    margin-top: 0px;
+    margin-bottom: 100px;
+    font-weight: 700;
+    font-size: 60px;
+    color: #6e574e;
+}
+
+.product-header-dis {
+    padding: 0;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin:0 30px 0 30px;
+    gap:60px
+}
+
+.product-element {
+    width: 100%;
+    height: auto !important;
+    min-height: 0 !important;
+  
+}
+
+.product-element::after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.product-element:last-child {
+    order: -1;
+}
+
+h5 {
+    font: 1.9em "Big Shoulders Display";
+    color:var(--main-bg);
+    text-align: center;
+}
+
+h1 {
+    font:4.5em "Big Shoulders Display";
+    font-weight: 800;
+    background: url(../img/image.png) center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-text {
+    font:2.5em "Big Shoulders Display";
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+    color:var(--sub-bg);
+}
+#portfolio-header { display: block;}
+
+
+h2 {
+    font-family: "Big Shoulders Inline Text";
+    font-size: 2.5em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom:150px
+    
+}
+
+.padtop {margin-bottom: 50px;}
+
+
+
+
+main {
+    background-color: var(--main-bg);
+}
+nav {display: none;}
+#bg-about {
+    display: none;
+    z-index: 0;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    /* padding-top: 100px; */
+}
+#about-text-item {
+    margin: 10px 0 10px 0;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.1em;
+    color: #6B4539;
+}
+
+
+#portfolio-side {
+    text-transform: uppercase;
+    font: 2.3em "Big Shoulders Display";
+    font-weight: 700;
+    color:var(--sub-bg);
+    text-align: center;
+    margin-top: 25px;
+    filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.3));
+
+}
+
+.portfolio-pics img {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+}
+.two-pic {height: 270px;}
+.two-pic img:first-child {
+
+    left:85px;
+    z-index: 5;
+}
+.two-pic img:nth-child(2) {
+
+    top:85px;
+}
+.portfolio-pics {
+    position: relative;
+    margin: 80px auto 0 auto;
+    width: 270px;
+}
+
+
+.portfolio-main {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.three-picture {height: 400px;}
+.three-picture img {border-radius: 5px; border: 1px solid black}
+.three-picture img:first-child {
+    z-index: 5;
+}
+.three-picture img:nth-child(2) {
+    z-index: 4;
+    right: 0;
+    top: 100px
+
+}
+.three-picture img:nth-child(3){
+    z-index: 3;
+    top:200px;
+}
+
+.portfolio-main-sub {position: relative;margin-top:60px; overflow: visible; 
+    min-width: max-content;}
+
+.portfolio-main button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    margin: auto;
+    border: none;
+    background: url(../img/button-bg.jpg);
+    font-family: "Big Shoulders Stencil Display";
+    color: white;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.bg-text {
+    font-family: "Big Shoulders Display";
+    font-size: 19vw;
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    opacity: 20%;
+    text-transform: uppercase;
+    color: #A5A5A5;
+    font-weight: 800;
+    letter-spacing: 15px;
+    white-space: nowrap; 
+    overflow: visible; 
+    z-index: 1;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    background: url(../img/skills-bg.jpg) center/cover;
+    background-color: #F4F4EA;
+}
+  
+.skills {
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.skills::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F4F4EA; 
+    opacity: 0.7; 
+    z-index: -1;
+}
+
+
+.skills-main {
+    height: 30vh;
+    display: flex;
+    gap:10px;
+}
+
+.skills-sub {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.skills-text {text-align: center;}
+.skills-sub-top {
+    font:1.5em "Big Shoulders Display";
+    color:#714A4A;
+    font-weight: 800;
+}
+
+.skills-sub-bottom {
+    font:1em "Big Shoulders Display";
+    color:#78574C;
+    font-weight: 800;
+}
+
+
+
+.title-text {
+    display: block;
+}
+#testimonial-2 {
+    display: none;
+}
+
+.testimonials p {
+    font: 20px "Big Shoulders Display";
+    
+    
+}
+
+#testimonials-header {
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+}
+
+.testimonial-card {
+    display: flex;
+    gap:12px;
+    margin-top:30px
+    
+}
+
+.testimonial-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonials-sub {
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.testimonial {
+    width: 230px;
+}
+
+.testimonials img {
+    width: 55px;
+    height: 55px;
+}
+
+footer {
+    background-color: #E3E3C4;
+}
+
+.footer-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:30px;
+    gap:20px;
+}
+
+footer span {
+    font-family: "Big Shoulders Display";
+
+}
+
+#footer-name,#footer-name-alt {
+    color:#6B4539;
+    letter-spacing: 5px;
+}
+
+
+
+
+
+#footer-name {
+    font-size:30px;
+    font-weight: 800;
+}
+.icons img {
+    width: 30px;
+    height: 30px;
+}
+
+footer hr {
+    width: 100%; margin: auto; height: 1px; background-color: #6B4539; border: none;
+}
+
+#footer-name-alt {display: none;}
+
+#footer-design {
+    color:#6B4539;
+    font-weight:700
+}
+
+
+.portfolio-slider-mask {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3); /* semi-transparent layer */
+    backdrop-filter: blur(10px);
+}
+
+.portfolio-slider-mask.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+.swiper {
+    width: 85%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    height:20% !important;
+  }
+  
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .swiper-slide {
+    transform: scale(0.5);
+    opacity: 0.5;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-radius:16px;
+    
+  }
+  .swiper-slide::after {
+    content: "";
+    display: block;
+    padding-top: 100%; /* Makes height equal to width */
+}
+
+
+  .swiper-slide-active {
+    transform: scale(0.8) !important;
+    opacity: 1 ;
+    z-index: 2;
+  }
+
+  .swiper-slide-next,
+  .swiper-slide-prev {
+    transform: scale(0.65) !important;
+    opacity: 0.75;
+    z-index: 1;
+    
+  }
+
+  .product-left {
+    display: none;
+    min-height: 100vh;
+  }
+
+
+  
+
+
+
+
+
+@media(min-width:500px) {
+    h1 {
+        font-size:7em
+    }
+
+    h3 {
+        font-size:100px;
+    }
+    h2 {
+        font-size:5em
+    }
+
+    #portfolio-side {font-size: 50px;}
+
+    .title-text {font-size:50px}
+
+    .portfolio-main button {width: 150px; height: 50px; font-size:20px}
+
+    .skills-sub-top {
+        font-size:2.5em;
+    }
+
+    .skills-sub-bottom {
+        font-size: 1.4em;
+    }
+
+    .testimonials p {
+        font-size: 22px;
+    }
+
+    .burger-header {
+        font-size:3em;
+      }
+    
+    .product-burger-text {
+        font-size: 3em;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    
+    .product-burger-container {
+        gap:25px;
+    }
+
+    .dropDown-text {
+        font-size: 1.5em;
+        letter-spacing: 3px;
+    }
+
+    .product-element {
+        width: 45%;
+        margin-bottom: 5%;
+    }
+    
+    .product-container {
+        gap:10%
+    }
+
+    .product-header {
+        font-size: 7.5em;
+    }
+
+}   
+
+
+@media(min-width:700px) {
+    h1 {
+        font-size:10em
+    }
+
+    h3 {
+        font-size:4em;
+    }
+    h2 {
+        font-size:5.5em
+    }
+
+
+    .portfolio-pics img {
+        width: 250px; height: 250px;
+    }
+    .portfolio-main {align-items: center; position: relative;}
+    
+
+    .two-pic { height: 375px;}
+
+    .three-picture {height: 530px;}
+    .three-picture img:first-child {
+        z-index: 5;
+    }
+    .three-picture img:nth-child(2) {
+        z-index: 4;
+        right: 0;
+        top: 155px;
+    
+    }
+    .three-picture img:nth-child(3){
+        z-index: 3;
+        top:280px;
+    }
+
+    .two-pic img:first-child {
+
+        left:125px;
+        z-index: 5;
+    }
+    .two-pic img:nth-child(2) {
+    
+        top: 125px;;
+    }
+
+    .title-text {
+        font-size:4em;
+        
+    }
+    
+    
+    #portfolio-side {
+        align-self: end;
+        color:#6B4539;
+        letter-spacing:10px;
+        font-weight: 800;
+        text-align: initial;
+        font-size:5em;
+        transform: rotate(90deg);
+        margin:0;   
+        width: 238px;
+    }
+
+    #side-wrapper {
+        display: flex;
+        align-self: center;
+        
+    }
+    #side-wrapper h4 {margin-left: 30px;}
+
+   .bg-text {
+    position: absolute;
+    font-size: 11em;
+    top:250px; right:0;left:initial;z-index: 0;
+   }
+   .portfolio-sub {position: relative; width: 100%;}
+
+    .portfolio-pics {width: 375px; margin:0;}
+    
+    .portfolio-main-sub {
+        position: relative;
+        display: flex;
+        flex:1;
+        flex-direction: row-reverse;
+        justify-content: center;
+        
+    }
+    .portfolio-main {
+        position: relative;
+        gap:150px
+    }
+
+    .skills-sub-top {
+        font-size:3em;
+    }
+
+    .skills-sub-bottom {
+        font-size: 1.7em;
+    }
+
+    #testimonial-2 {
+        display: block;
+    }
+
+    .testimonials-sub {
+        flex-direction: row;
+        justify-content: center;
+        gap:85px;
+    }
+    .testimonials-sub p {
+        font-size:20px;
+        width: 100%;
+    }
+
+    .testimonial-sub-main {
+        width: 280px;
+    }
+
+
+    #footer-name {
+        font-size:40px;
+        font-weight: 800;
+    }
+    .icons img {
+        width: 50px;
+        height: 50px;
+    }
+    .icons {display: flex;gap:20px}
+
+    #footer-name-alt {
+        display: block;
+        letter-spacing: 1px;
+        font-weight: 700;
+
+    }
+
+    #footer-design {
+        color:#6B4539;
+        font-weight:700;
+        font-size:20px;
+        letter-spacing:1px
+    }
+
+    .portfolio-main button {
+        width: 180px;
+        height: 60px;
+        font-size:23px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .product-element {
+        width: 30%;
+        margin-bottom: 3%;
+    }
+    
+    .product-container {
+        gap:5%
+    }
+
+    .product-header {
+        font-size: 8em;
+    }
+}
+
+
+@media(min-width:1024px) {
+    nav {display: flex;}
+
+    header {
+        padding: 0;
+    }
+    .header-text {padding-top:150px}
+
+    h1 {
+        font-size: 15em;
+        text-align: center;
+    }
+
+    h2 {
+        font-size:6em
+    }
+
+    .section-header h3 {
+        font-size:4.5em;
+        text-transform: capitalize;
+        letter-spacing: 14px;
+    }
+
+    header {
+        display: block;
+        margin-bottom: 200px;
+    }
+    .burger-svg {display: none !important;}
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:50px auto 0 auto;
+        gap:50px;
+        width: 835px;
+        height: 60px;
+        flex-grow:1;
+        border-radius: 25px;
+        background-color: var(--main-bg);
+        
+    }
+
+    /* Ilyai */
+
+
+    #logo {
+        font: 30px 'Big Shoulders Display';
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0.1em;
+        color: #4E2A1E;
+
+
+    }
+    nav {
+        font-family: "Big Shoulders Display";
+        transition: 1s;
+        box-shadow: 0px 4px 5px 0 #575757;
+        color:var(--sub-bg);
+    }
+
+    #nav-items {
+        font-weight: 600;
+        font-size:20px;
+        display:flex;
+        gap:35px;
+        
+    }
+
+    
+    #bg-about {
+        display: block;
+        position: absolute;
+        top:0;
+        left:-70px;
+        font:20em "Big Shoulders Display";
+        font-weight: 800;
+        opacity: 20%;
+        letter-spacing: 30px;
+        text-transform: uppercase;
+        color:#A5A5A5;
+    }
+
+    .about {
+        display: initial;
+        text-align: initial;
+        
+    }
+    .about-text {
+        margin:100px 0 0 100px;
+    }
+
+    #about-text-item {
+        margin: 40px 0 40px 0;
+    }
+
+    #portfolio-side {
+        text-transform: uppercase;
+        font: 6.3em "Big Shoulders Display";
+        font-weight: 800;
+    }
+    #about-header {
+        position: relative;
+        z-index: 1;
+    }
+
+    #about-text-item {
+        font-size: 30px;
+    }
+
+    .portfolio-main-sub {justify-content: space-evenly;}
+    
+    .portfolio-pics img {
+        width: 400px;
+        height: 400px;
+    }
+    #portfolio-side {
+        margin-right:90px;
+
+    }
+
+    .three-picture {height: 845px; width: 575px;}
+    .three-picture img:first-child {
+
+        z-index: 5;
+    }
+    .three-picture img:nth-child(2) {
+        top:175px;
+        left:175px;
+    
+    }
+    .three-picture img:nth-child(3){
+        top:445px;
+        left:0;
+        z-index: 3;
+    }
+
+    .two-pic img:first-child {
+        right:0;
+        z-index: 5;
+        right:175px
+    }
+    .two-pic img:nth-child(2) {
+        top:175px;
+        left:0;
+    }
+    #portfolio-side {font-size:9em;}
+    .bg-text {
+        font-size:19em;
+    }
+    .two-pic {
+        height: 575px;
+        width: 525px
+    }
+    .portfolio-main {gap:200px;}
+
+    .title-text {font-size: 6em;}
+    .living-bg-text {top:-30px; right:0;}
+
+    .skills {
+        height: 50vh;
+    }
+
+
+    .skills-sub-top {
+        font-size:4em;
+    }
+
+    .skills-sub-bottom {
+        font-size: 2.4em;
+    }
+
+    .skills-main {
+        gap:60px
+    }
+
+    .testimonials-sub p {
+        font-size:33px;
+    }
+
+    .testimonial-sub-main {
+        width: 450px;
+    }
+
+    .testimonials-sub {
+        gap:120px;
+        margin:50px 0 50px 0;
+
+    }
+
+    #footer-name {
+        font-size:50px;
+        font-weight: 800;
+    }
+    .icons img {
+        width: 50px;
+        height: 50px;
+    }
+    .icons {display: flex;gap:20px}
+
+    #footer-name-alt {
+        display: block;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-size:20px
+
+    }
+
+    #footer-design {
+        color:#6B4539;
+        font-weight:700;
+        font-size:20px;
+        letter-spacing:1px
+    }
+    footer hr {
+        width: 85%;
+    }
+
+    .portfolio-main button {
+        width: 260px;
+        height: 80px;
+        font-size:30px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom:70px
+    }
+
+    .product-burger {
+        display: none;
+    }
+    .product-body-container {
+        display: flex;
+    }
+
+    .product-right {
+        width: 100%;
+    }
+    
+    .product-left {
+        width: 700px;
+        background-color: #F5F5DC;
+        padding-left: 5%;
+        display: block;
+        
+    }
+    
+    .product-header-dis {
+        display: none;
+    }
+
+    .product-element {
+        width: 35%;
+        margin-bottom: 10%;
+    }
+    
+    .product-container {
+        gap:10%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+    }
+
+    
+    
+
+    .product-header {
+        font-size: 7.5em;
+    }
+
+    .left-header {
+        font: 4em "Big Shoulders Display";
+        text-transform: uppercase;
+        letter-spacing: 7px;
+        display: block;
+        margin: 150px 0 50px 0;
+        color: var(--sub-bg);
+        font-weight: 700;
+
+    } 
+
+    .product-burger-text {
+        color: #6B4539;
+        text-align: left;
+        display: inline-block;
+        padding-left: 20px;
+    }
+    .dropDown-text {
+        color: #6B4539;
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    .product-burger-container {
+        display: inline-flex;
+        margin: auto;
+    }
+}
+
+@media(min-width:1400px) {
+    .product-element {
+        width: 30%;
+        margin-bottom: 3%;
+    }
+    
+    .product-container {
+        gap:5%;
+        margin:0 100px 0 100px;
+    }
+}
+
+#productBody {
+    background-color: var(--main-bg);
+
+}
+
+
+
+

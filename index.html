@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilyayi Furniture</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100..900&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.a min.css" />
+
+
+</head>
+<body>
+    
+    <div class="burger-menu">
+        <div class="burger-menu-text">
+            <h5>Home</h5>
+            <h5>About</h5>
+            <h5>Skills</h5>
+            <h5>Portfolio</h5>
+            <h5>Skills</h5>
+            <h5>Testimonials</h5>
+            <h5>Contact</h5>
+        </div>
+    </div>
+    <header>
+
+        <nav>
+            <ul id = "nav-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+
+            <li id = "logo">Ilyai</li>
+
+            <ul id = "nav-items">
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="burger-svg" >
+            <svg width="50" height="50" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id = "line-top" d="M5 15H25" stroke="#4E2A1E" stroke-width="3" stroke-linecap="round"/>
+                    <path id = "line-bottom" d="M5 5H25" stroke="#4E2A1E" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </div>
+        
+        
+        <div class="header-text padtop">
+            <h1>Furnitures</h1>
+            <h3 class = "title-text">by</h3>
+            <h2>ilyai</h2>
+        </div>
+    </header>
+    <main>
+        <div class="about section-header padtop">
+            <p id = "bg-about">about</p>
+            <span id = "about-header" class = "title-text"><p>About me</p></span>
+
+            <div class="about-text">
+                <li id = "about-text-item">Full name : Fuad Ilyai</li>
+                <li id = "about-text-item">Phone : 070-256-91-21</li>
+                <li id = "about-text-item">Email : ilyai23@gmail.com</li>
+                <li id = "about-text-item">Adress : Azerbaijan, Baku no 17</li>
+            </div>
+        </div>
+        <div class="portfolio section-header padtop" >
+            <div class="portfolio-slider-mask">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                    </div>
+                
+                  </div>
+            </div>
+            <span id = "portfolio-header" class = "title-text" >Portfolio</span>
+            <div class="portfolio-main">
+                <section class="portfolio-sub">
+                    <section class="portfolio-main-sub">
+                        <span  class="living-bg-text bg-text">Living</span>
+                        <section id = "side-wrapper">
+                            <h4 id = "portfolio-side">Living</h4>
+                        </section>
+                        <section class="two-pic portfolio-pics">
+                            <img class="living-trigger" onclick = "livingSlider()" src="./img/living/Journal/living-fur-1.png" alt="">
+                            <img class="living-trigger" onclick = "livingSlider()" src="./img/living/bookshelf/living-fur-2.png" alt="">
+                        </section>
+                    </section>
+                </section>
+                <section class="portfolio-sub">
+                        <section style="flex-direction: row;" class="portfolio-main-sub">                    
+                        <section id = "side-wrapper">
+                        <h4 style="margin:0 100px 0 0" id = "portfolio-side">Kitchen</h4>
+                        </section>
+                        <section class="three-picture portfolio-pics">
+                        <img src="./img/kitchen/Bar Stools & Breakfast Bars/Set of industrialstyle pendant lights in matte black hanging above a sleek kitchen island with marble countertops.jpg" alt="">
+                        <img src="./img/kitchen/Dining Tables & Chairs/A modern, stylish kitchen and dining room with a minimalist design. This 3D illustration is perfect for a website banner..png" alt="">
+                        <img src="./img/kitchen/cabinets-and-storage/Kitchen access mechanism Magic corner for Blind Corner Cabinets. Solution for a kitchen corner storage in cupboard. Corner unit with pull out shelves for cookware. (1).png" alt="">
+                        </section>
+                        <span style="left:0; top:0" class="bg-text">kitchen</span>
+                    </section>
+                </section>
+                <section class="portfolio-sub">
+                    <section class="portfolio-main-sub">
+                        <span style = "top:0;" class="bg-text">Bedroom</span>
+                        <section id = "side-wrapper">
+                            <h4  id = "portfolio-side">Bedroom</h4>
+                        </section>
+                        <section class="three-picture portfolio-pics">
+                            <img src="./img/bedroom/Beds & Sleeping Furniture/Modern double bed 1,generative.jpg" alt="">
+                            <img src="./img/kids bedroom/A cozy children room featuring a bunk bed and playful decorations, designed for comfort and creativity..jpg" alt="">
+                            <img src="./img/bedroom/Beds & Sleeping Furniture/Mock up frame in a modern adult bedroom with natural wooden headboard and sleek decor .jpg" alt="">
+                            </section>
+                    </section>
+                </section>
+                
+                <button onclick="window.location.href='product.html'">Learn More</button>
+            </div>
+        </div>
+
+        <div class="skills padtop">
+            <div class="skills-main">
+                <section class="skills-sub">
+                    <span class="skills-text skills-sub-top">150+</span>
+                    <span class="skills-text skills-sub-bottom">Homes Furnished</span>
+                </section>
+                <section class="skills-sub">
+                    <span class="skills-text skills-sub-top">25+</span>
+                    <span class="skills-text skills-sub-bottom">Years Of Experience</span>
+                </section>
+                <section class="skills-sub">
+                    <span class="skills-text skills-sub-top">98%</span>
+                    <span class="skills-text skills-sub-bottom">Client satisfaction</span>
+                </section>
+            </div>
+        </div>
+
+        <div class="testimonials padtop">
+            <span id = "testimonials-header" class = "title-text">Testimonials</span>
+
+            <section class="testimonials-sub">
+                <section id="testimonial-1" class = "testimonial-sub-main">
+                    <p class = "testimonial">“I was blown away by the craftsmanship and attention to detail! Every piece feels like a work of art, built to last for generations. The custom dining table fit our space perfectly, and the quality is beyond what we expected. Highly recommend”</p>
+                    <section class="testimonial-card">
+                        <img src="./img/testimonial-woman 2.png" alt="">
+                            <section class="testimonial-card-text">
+                                <p>Elena M.</p>
+                                <p>Interior Designer</p>
+                            </section>
+                    </section>
+                </section>
+                <section id="testimonial-2" class = "testimonial-sub-main">
+                    <p class = "testimonial">“I wanted a statement bookshelf that was both functional and beautiful, and I got exactly that! From the wood selection to the finishing touches, everything was top-notch. It’s rare to find someone so dedicated to their craft. Will definitely be ordering again!"</p>
+                    <section class="testimonial-card">
+                        <img src="./img/testimonial-man 1.png" alt="">
+                            <section class="testimonial-card-text">
+                                <p>Daniel R. </p>
+                                <p>Interior Designer</p>
+                            </section>
+                    </section>
+                </section>
+            </section>
+        </div>
+        
+        
+    </main>
+    <footer>
+        <div class="footer-sub">
+            <span id="footer-name">Fuad Ilyai</span>
+            <span id="footer-name-alt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nesciunt.</span>
+            <section class="icons">
+                <img src="./img/icons/ig-icon.png" alt="">
+                <img src="./img/icons/fb-icon.png" alt="">
+                <img src="./img/icons/in-icon.png" alt="">
+                <img src="./img/icons/X-icon.png" alt="">
+            </section>
+            <hr>
+            <span id = "footer-design">Designed By Rauf Ilyai</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="data.js"></script>
+    <script  src = "script.js"></script>
+    
+</body>
+</html>
